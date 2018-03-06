@@ -120,6 +120,7 @@ let forecast
     </View>
     <View style={styles.forecastDay} key={i}>
     <Text style={styles.forecastTemperature}>{Math.round(this.state.forecast.[i]toString())}</Text>
+     <Text style={styles.forecastIcon}><Icon size={30} name={icon(this.state.forecast[i].icon)} /></Text>
     </View>
     </View>
   )
